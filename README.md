@@ -1,155 +1,80 @@
-/* Общие стили */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Дизайнера Интерьеров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <!-- Главная страница -->
+    <header class="header">
+        <div class="container">
+            <h1>Привет! Я дизайнер интерьеров</h1>
+            <p>Создаю стильные и функциональные пространства для жизни и работы</p>
+        </div>
+    </header>
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+    <!-- О проекте -->
+    <section class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Я профессиональный дизайнер интерьеров с опытом работы более 5 лет. Моя цель — создавать уникальные и комфортные пространства для каждого клиента.</p>
+        </div>
+    </section>
 
-/* Главная страница */
-.header {
-    background: #333;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
+    <!-- Портфолио -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>Мое Портфолио</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/project1.jpg" alt="Проект 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/project2.jpg" alt="Проект 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/project3.jpg" alt="Проект 3">
+                </div>
+            </div>
+        </div>
+    </section>
 
-.header h1 {
-    font-size: 2.5em;
-}
+    <!-- Услуги -->
+    <section class="services">
+        <div class="container">
+            <h2>Услуги</h2>
+            <ul>
+                <li>Проектирование интерьеров</li>
+                <li>3D-визуализация</li>
+                <li>Подбор материалов и мебели</li>
+                <li>Консультации по дизайну</li>
+            </ul>
+        </div>
+    </section>
 
-.header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
+    <!-- Контакты -->
+    <section class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной через форму ниже или напишите на email:</p>
+            <p>Email: example@example.com</p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
 
-/* О разделе "Обо мне" */
-.about {
-    padding: 50px 0;
-    background: #fff;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Портфолио Дизайнера Интерьеров</p>
+        </div>
+    </footer>
 
-.about h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.about p {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-/* Портфолио */
-.portfolio {
-    background: #f9f9f9;
-    padding: 50px 0;
-}
-
-.portfolio h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.gallery {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.gallery-item img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Услуги */
-.services {
-    padding: 50px 0;
-    background: #fff;
-}
-
-.services h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.services ul {
-    list-style: none;
-    text-align: center;
-}
-
-.services li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Контакты */
-.contact {
-    padding: 50px 0;
-    background: #f9f9f9;
-}
-
-.contact h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: #444;
-}
-
-/* Футер */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+</body>
+</html>
